@@ -248,10 +248,12 @@ body.builder-mode .builder-ui {
   opacity: 0.8;
 }
 
+.media-delete-icon:focus,
 .media-delete-icon:hover {
   opacity: 1.0;
 }
 
+.block-media:focus .media-delete,
 .block-media:hover .media-delete {
   opacity: 1;
 }

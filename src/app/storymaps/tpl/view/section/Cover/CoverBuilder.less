@@ -62,7 +62,7 @@
     }
 
     .title-text {
-      &:hover:not(:focus):not(.title-error) {
+      &:hover:not(.title-error), &:focus:not(.title-error) {
         border: 2px solid rgba(241, 248, 253, 0.14);
       }
 
@@ -75,7 +75,7 @@
       }
 
       &.text-dark {
-        &:hover:not(:focus):not(.title-error) {
+        &:hover:not(.title-error), &:focus:not(.title-error) {
           border: 2px solid rgba(15,15,15, 0.14);
         }
 
@@ -106,7 +106,7 @@
       display: block;
     }
 
-    &:hover {
+    &:hover, &:focus {
       opacity: 0.9;
     }
 

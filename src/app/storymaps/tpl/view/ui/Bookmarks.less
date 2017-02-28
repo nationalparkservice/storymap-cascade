@@ -32,7 +32,7 @@
     border-bottom: 3px solid transparent;
     font-size: 14px;
 
-    &:hover {
+    &:hover, &:focus {
       border-bottom-color: @btn-info-border;
     }
 
@@ -48,7 +48,7 @@
 
     .dropdown-toggle {
       color: @gray-lighter;
-      &:hover {
+      &:hover, &:focus {
         color: @btn-info-border;
         text-decoration: none;
       }
@@ -56,7 +56,7 @@
 
     &.active .dropdown-toggle {
       color: @btn-info-border;
-      &:hover {
+      &:hover, &:focus {
         color: darken(@btn-info-border, 5%);
       }
     }
@@ -73,7 +73,7 @@
       border-left: 3px solid transparent;
       padding-left: 10px;
 
-      &:hover {
+      &:hover, &:focus {
         border-left-color: @btn-info-border;
       }
 
