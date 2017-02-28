@@ -17,7 +17,7 @@
 
     cursor: pointer !important;
 
-    &:hover {
+    &:hover, &:focus {
       opacity: 1;
     }
   }
@@ -39,6 +39,7 @@
   }
 }
 
+.block.image .block-media:focus .img-gallery-invite:not(.disabled),
 .block.image .block-media:hover .img-gallery-invite:not(.disabled) {
   visibility: visible !important;
   opacity: 1 ! important;

@@ -44,7 +44,6 @@ body.mobile-view .block-media {
 
  /* common with gallery */
 .block-caption {
-  outline: none;
   font-family: 'open_sans', sans-serif;
   font-size: 14px;
   line-height: 22px;
@@ -249,10 +248,12 @@ body.builder-mode .builder-ui {
   opacity: 0.8;
 }
 
+.media-delete-icon:focus,
 .media-delete-icon:hover {
   opacity: 1.0;
 }
 
+.block-media:focus .media-delete,
 .block-media:hover .media-delete {
   opacity: 1;
 }

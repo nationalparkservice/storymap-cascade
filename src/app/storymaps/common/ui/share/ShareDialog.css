@@ -62,6 +62,7 @@ body:not(.mobile-view) .shareDialog .social-container {
 	cursor: pointer;
 }
 
+.shareDialog .social-icon:focus,
 .shareDialog .social-icon:hover {
 	color: #666;
 }

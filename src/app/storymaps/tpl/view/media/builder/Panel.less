@@ -19,7 +19,7 @@
 
     cursor: pointer !important;
 
-    &:hover {
+    &:hover, &:focus {
       opacity: 1;
     }
   }
@@ -232,6 +232,7 @@
  * Invite visibility for block and background
  */
 
+.block-media:focus .media-cfg-invite,
 .block-media:hover .media-cfg-invite{
   visibility: visible !important;
   opacity: 1 ! important;

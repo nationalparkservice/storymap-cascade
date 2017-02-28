@@ -1,7 +1,6 @@
 @import "../../../core/Variables";
 
 .background-title h2 {
-  outline: none;
   border: 2px solid transparent;
 }
 
@@ -19,7 +18,7 @@
 
 .section-immersive {
   .title-text {
-    &:hover:not(:focus) {
+    &:hover, &:focus {
       border: 2px solid rgba(241, 248, 253, 0.5);
     }
 
@@ -29,7 +28,7 @@
     }
 
     &.text-dark {
-      &:hover:not(:focus) {
+      &:hover, &:focus {
         border: 2px solid rgba(15,15,15, 0.5);
       }
 
