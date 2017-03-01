@@ -14,8 +14,8 @@ class SettingsPopup {
   constructor(options) {
     this.container = options.container;
     this.data = null;
-    this.esriLogoUrl = 'resources/tpl/viewer/icons/esri-logo.png';
-    this.esriLogoLink = 'https://storymaps.arcgis.com';
+    this.esriLogoUrl = 'resources/tpl/viewer/icons/nps-logo.png';
+    this.esriLogoLink = 'https://www.nps.gov';
 
     this.reject = null;
     this.resolve = null;
@@ -270,7 +270,7 @@ class SettingsPopup {
                 }.bind(this), 2000);
               }.bind(this),
               function() {
-                let esriName = 'Esri';
+                let esriName = 'NPS';
                 // Remove the logo
                 this.container.find('.hc-action-icon.hc-remove').click();
                 this.container.find('.btn.apply').removeClass('disabled');

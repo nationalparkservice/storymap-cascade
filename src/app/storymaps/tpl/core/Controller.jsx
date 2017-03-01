@@ -21,16 +21,16 @@ import i18n from 'lib-build/i18n!resources/tpl/viewer/nls/app';
 
 import Media from 'storymaps-react/tpl/view/media/Media';
 
-let storyMap = 'Story Map';
+let storyMap = 'An NPS Story Map';
 
 const DEFAULT_HEADER_SETTINGS = {
   logo: {
     enabled: true,
-    url: 'resources/tpl/viewer/icons/esri-logo.png',
-    link: 'https://www.esri.com'
+    url: 'resources/tpl/viewer/icons/nps-logo.png',
+    link: 'https://www.nps.gov'
   },
   link: {
-    url: 'https://storymaps.arcgis.com',
+    url: 'https://www.nps.gov',
     title: i18n.viewer.headerFromCommon.defaultTagline.replace(/\${STORY_MAP}/g, storyMap)
   },
   social: {
@@ -318,7 +318,7 @@ export default class Controller {
 
     $.each(params.visibleSections, function(i, sectionIndex) {
       var section = this._sections[sectionIndex],
-          sectionTop = app.display.sections[sectionIndex].top;      
+          sectionTop = app.display.sections[sectionIndex].top;
 
       // Skip current section that already got one event sent
       if (sectionIndex == params.currentSectionIndex) {

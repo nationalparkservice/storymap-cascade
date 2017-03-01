@@ -43,7 +43,7 @@ define({
         sceneNotSupported: "Sorry this 3D map is not supported on your device."
       },
       headerFromCommon: {
-        defaultTagline: "A ${STORY_MAP}",
+        defaultTagline: "${STORY_MAP}",
         share: "Share",
         tooltipAutoplayDisabled: "This isn't available in autoplay mode"
       },
