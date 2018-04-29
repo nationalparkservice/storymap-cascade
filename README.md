@@ -8,7 +8,7 @@ The Story Map Cascade℠ app lets you combine narrative text with maps, images, 
 [Download](http://links.esri.com/storymaps/story_map_cascade_zip) |
 [Cascade page on Esri Story Maps website](https://storymaps.arcgis.com/en/app-list/cascade/)
 
-**Latest release is version 1.6.2**, if you want to be informed of new releases, we recommend you watch this repository ([see GitHub help](https://help.github.com/articles/watching-repositories)). See the [release page](https://github.com/Esri/story-map-cascade/releases) for release notes.
+**Latest release is version 1.7.2**, if you want to be informed of new releases, we recommend you watch this repository ([see GitHub help](https://help.github.com/articles/watching-repositories)). See the [release page](https://github.com/Esri/story-map-cascade/releases) for release notes.
 
 ## Help content
 
@@ -64,7 +64,7 @@ For more answers, please see the [Story Map website FAQ page](https://storymaps.
 ### What are the supported browsers?
 Cascade stories are supported on Internet Explorer 11 and above, Chrome, Firefox, Safari and the most recent tablet and smartphone devices.
 
-Cascade authoring is only supported on Chrome and Safari on a desktop computer. We are considering support for other browsers.
+Cascade authoring is supported on a desktop computer for Chrome, Firefox, and Safari. We are considering support for other browsers.
 
 We actively test the application in all major browsers but if you experience difficulties, especially with the builder, we recommend that you use [Chrome](https://www.google.com/intl/en_us/chrome/browser/).
 
@@ -228,19 +228,15 @@ The application is structured as follows:
 | src/											| Main source code folder with index.html					|
 | src/app/										| Javascript and CSS source code 																|
 | src/app/config.js			            		| App configuration file (loaded at execution time) 											|
-| src/app/storymaps/common/				| Modules common across storymaps templates (main module is Core.js)							|
-| src/app/storymaps/common/builder/				| Builder modules (main module is Builder.js)													|
-| src/app/storymaps/common/ui/					| UI components																					|
-| src/app/storymaps/common/utils/				| Utils, sharing, some external libraries																			|
-| src/app/storymaps/common/_resources			| Static resources																				|
 | **src/app/storymaps/tpl/**					| Cascade modules (build configuration files in the root)									|
-| src/app/storymaps/tpl/builder/				| Builder modules (main module is BuilderView.js)												|
-| src/app/storymaps/tpl/core/					| Core modules (main module is MainView.js) 													|
+| src/app/storymaps/tpl/builder/				| Builder modules (main modules are Builder.js, BuilderView.js)												|
+| src/app/storymaps/tpl/core/					| Core modules (main modules are Core.js, MainView.js) 													|
+| src/app/storymaps/tpl/print/					| Print modules 													|
 | src/app/storymaps/tpl/view/						| UI components of the viewer and builder											|
 | **src/app/storymaps/tpl/view/media/**						| Map, Scene, Image, Audio, Video, WebPage, Text											|
 | **src/app/storymaps/tpl/view/section/**					| Cover, Sequence, Immersive and Title sections 										|
 | **src/app/storymaps/tpl/view/ui/**						| Header										|
-| src/app/storymaps/tpl/utils/						| Utils											|
+| src/app/storymaps/tpl/utils/						| Utils, sharing, some external libraries											|
 | src/app/storymaps/issue-checker/ | Issue checking utility (finds errors in story) |
 |src/lib/									| Dependencies (included in the final app)														|
 | src/lib-build/								| Dependencies used by the build (not included in final app)									|
@@ -252,7 +248,7 @@ The main dependencies are:
  * [Bootstrap](http://getbootstrap.com/)
  * [MediumEditor](https://github.com/yabwe/medium-editor)
 
-The application Javascript and CSS are minified into four files:
+The application Javascript and CSS are minified into six files:
 
 | File			        |										                                        |
 | --------------------- | ----------------------------------------------------------------------------- |
@@ -260,6 +256,8 @@ The application Javascript and CSS are minified into four files:
 | app/viewer-min.js	    | Compressed Javascript loaded when accessing the story as a viewer	    |
 | app/builder-min.css	| Compressed CSS loaded when accessing the story as an author		        |
 | app/builder-min.js	| Compressed Javascript loaded when accessing the story as an author	    |
+| app/print-min.css	| Compressed CSS loaded when accessing the story in print mode		        |
+| app/print-min.js	| Compressed Javascript loaded when accessing the story in print mode	    |
 
 Depending on the URL parameters, index.html will load the corresponding files.
 
@@ -270,7 +268,7 @@ Find a bug or want to request a new feature?  Please let us know by submitting a
 Esri welcomes contributions from anyone and everyone. Please see our [guidelines for contributing](https://github.com/esri/contributing).
 
 ## Licensing
-Copyright &copy; 2016, 2017 Esri
+Copyright &copy; 2016-2018 Esri
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -296,7 +294,6 @@ Some open-source components of this project are licensed under other License ter
 | React                 | [BSD with patent grant](https://github.com/facebook/react#license)       |
 | React-redux           | MIT       |
 | Redux                 | MIT       |
-| Fluidbox              | MIT       |
 | Froogaloop            | N/A       |
 | youtube-api           | N/A       |
 | Clipboard.js          | MIT       |
