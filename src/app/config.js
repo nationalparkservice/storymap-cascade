@@ -42,7 +42,7 @@ app.cfg = {
   MEDIA_KEYS: {
     FLICKR_API: '750b36a2ac65a72e03cf9cef06d79f45',
     UNSPLASH_API: '05dea1567391cf2dcdb9bf52016953d1f878eb5a5ec4759cf839cdddebbb6ae2',
-    YOUTUBE_API: 'AIzaSyDevTFP16nz6sA-akiOVi6wWXiplJnQ4qw',
+    YOUTUBE_API: 'AIzaSyCL0LWXaLRPW_MclPK4-aQJvPpboakP-Ao',
     YOUTUBE_DISABLE_ON_PORTAL: true
   },
 
